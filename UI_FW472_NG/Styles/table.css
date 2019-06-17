@@ -1,0 +1,310 @@
+﻿table.folderdetails,
+table.folder-info-list
+{
+    width:100%;
+}
+
+table.folderdetails,
+table.folder-info-list,
+table.folderdetails td,
+table.folder-info-list td
+{
+    border-spacing:0px;
+    border-collapse:collapse ;  
+}
+
+table.folder-info-list th
+{
+    _border:1px solid #3a546d;
+    font-weight:100;
+    padding:7px 0px 7px 10px;
+    background-color:#377bb9;/*3a546d*/
+    color:#ffffff;
+    text-align:center ;
+}
+
+
+table.folder-info-list th.border-left
+{
+    border-left:1px solid #ffffff;
+}
+
+
+table.folderdetails td
+{
+    padding:5px 5px 5px 5px;
+}
+
+table.folder-info-list td
+{
+    padding:10px 15px 5px 15px;
+    border:1px solid #d7d7d7;
+}
+
+table.folderdetails td.td-head
+{
+    font-weight:700; 
+    text-align:right ;
+}
+
+table.folderdetails td.no-bold
+{
+    font-weight:100; 
+}
+
+table.folder-info-list td.td-head
+{
+    padding-left :40px;
+}
+
+td.td-left
+{
+    text-align:left !important;
+}
+
+table.folderdetails td.td-data
+{
+
+}
+
+table.folderdetails td.td-data div
+{
+    background-color:#f6f6f6;
+    border:1px solid #e1e1e1;
+    padding:5px 5px 5px 5px;
+    width:100%;
+}
+
+table.folderdetails td.td-data div.div-right
+{
+    text-align:right ; 
+}
+
+table.folder-info-list td.td-data div
+{
+    background-color:#f6f6f6;
+    border:1px solid #e1e1e1;
+    padding:5px 5px 5px 5px;
+    width:100%;
+}
+
+table.folderdetails td.td-data input
+{
+    background-color:#ffffff;
+    border:1px solid #b1b1b1;
+    padding:5px 5px 5px 5px;
+    width:100%;
+}
+
+table.folderdetails td.td-data input:focus,
+table.folderdetails td.td-data input:hover
+{
+    border:1px solid #377bb9;
+}
+
+table.tablepopupdetails,
+table.tablepopupdetails td
+{
+    border-collapse :collapse ;
+    border-spacing :0px;
+
+}
+
+table.tablepopupdetails
+{
+    width:100%;
+}
+table.tablepopupdetails td
+{
+    padding:5px 5px 5px 5px;
+}
+
+table.tablepopupdetails td.header
+{
+    color:#333333;
+    text-align:right; 
+    font-size:.8em; 
+}
+
+table.tablepopupdetails td.data
+{
+    color:#000000;
+    font-size:.8em; 
+}
+
+table.tablepopupdetails td.data input,
+table.tablepopupdetails td.data textarea
+{
+    padding:2px 0px 2px 4px;
+}
+
+table.table01,
+table.table02,
+table.table03
+{
+    width :100%;  
+    min-height:30px; 
+	background-color: #fff;
+    color :#000000;
+    border:1px solid #cccccc;
+    _border-radius :5px;  
+}
+table.table03
+{
+    font-size:11px; 
+}
+
+table.table01,
+table.table02,
+table.table03,
+table.table01 th,
+table.table02 th,
+table.table03 th,
+table.table01 td,
+table.table02 td,
+table.table03 td
+{
+    border-collapse:collapse ;
+    border-spacing:0px;  
+}
+    table.table01 th,
+    table.table02 th,
+    table.table03 th
+    {
+        border-bottom:1px solid #cccccc;  
+        border-right :1px solid #cccccc;  
+        font-size:1em;/*10px*/ 
+        text-align:left; 
+        background-color:#377bb9;  /*8bb093,CACACA, C8DDCA,EAECEF*/
+        color :#ffffff;/*516600*/
+        padding:10px 5px 10px 3px;
+        font-weight:100; 
+    }
+    table.table01 td,
+    table.table02 td
+    {
+        font-size:.9em; 
+        padding:4px 2px 4px 3px;
+        border-bottom:1px solid #cccccc;  
+        border-right :1px solid #cccccc;  
+    }
+
+    table.table01 tr:hover,
+    table.table02 tr:hover,
+    table.table01 tr.selected,
+    table.table02 tr.selected
+    {
+        background-color:#eeeeee ;  
+        border:1px solid #cccccc;  
+    }
+
+    table.table01 tr:hover div.charticon i,
+    table.table02 tr:hover div.charticon i
+    {
+        color:#8BB093;  
+        /*
+        color:#000000;  
+        color:#8BB093;  
+        */
+    }
+
+    table.table01 tr:hover div.charticon:hover i,
+    table.table02 tr:hover div.charticon:hover i
+    {
+        color:#006699;  
+    }
+
+    table.table01 th,
+    table.table01 td
+    {
+        min-height:25px; 
+    }
+
+    table.table02 th,
+    table.table02 td
+    {
+        height:20px; 
+    }
+
+    table.table01 th a
+    {
+        color:#ffffff;    
+        text-decoration:none; 
+    }
+   table.table01 th .sortorder
+   {
+       color:#ffffff;
+   }
+
+    table.table01 tr.selected,
+    table.table02 tr.selected
+    {
+        background-color:#e4e4e4 ;  
+        border:1px solid #cccccc;  
+    }
+
+
+table.table01 tr.strikeout td, 
+table.table01 span.strikeout
+{
+    text-decoration:line-through ; 
+    color:red;
+}
+
+table.table01 div.email-status
+    {
+        float:left;
+        border:1px solid #aaaaaa;
+        padding:3px 3px 3px 3px;
+        text-align:center;  
+        cursor:pointer;
+        _margin-right:3px; 
+        margin-top:3px;
+        border-radius:5px;   
+        width:100%;
+    }
+
+    table.table01 div.email-status i
+    {
+        _color:#aaaaaa;
+    }
+
+    table.table01 div.send
+    {
+        _background-color:#93c473; 
+        color:#93c473; 
+        border-color :#93c473;
+    }
+
+    table.table01 div.send:hover
+    {
+        background-color:#93c473; 
+        color:#ffffff; 
+        border-color :#93c473;
+    }
+
+    table.table01 div.not-send
+    {
+        _background-color:#ffe599; 
+        color:#eabb55; 
+        border-color :#ead1dc;
+    }
+
+    table.table01 div.not-send:hover
+    {
+        background-color:#eabb55; 
+        color:#ffffff; 
+        border-color :#eabb55;
+    }
+
+th.noleft,
+td.noleft
+{
+    border-left-width :0px !important;
+}
+
+th.noright,
+td.noright
+{
+    border-right-width :0px !important;
+}

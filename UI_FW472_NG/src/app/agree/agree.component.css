@@ -1,0 +1,15 @@
+.agree-content p{
+    text-align: justify;
+}
+
+.mobile-label{
+    display: none
+}
+
+@media only screen and (max-width: 600px) {
+
+    .btn{
+        width: 100%
+    }
+
+}

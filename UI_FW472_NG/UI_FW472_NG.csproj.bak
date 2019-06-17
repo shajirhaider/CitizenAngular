@@ -1,0 +1,352 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{57931A6B-E893-4418-B6E5-BCE388D7B8BC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RA.AMANDA.Portal.UIFWNG</RootNamespace>
+    <AssemblyName>RA.AMANDA.Portal.UIFWNG</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES2017</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <TypeScriptExperimentalDecorators>True</TypeScriptExperimentalDecorators>
+    <TypeScriptEmitDecoratorMetadata>True</TypeScriptEmitDecoratorMetadata>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\app\agree\agree.component.css" />
+    <Content Include="src\app\agree\agree.component.html" />
+    <Content Include="src\app\agree\agree.component.js" />
+    <Content Include="src\app\agree\agree.component.spec.js" />
+    <Content Include="src\app\app-material.module.js" />
+    <Content Include="src\app\app-routing.module.js" />
+    <Content Include="src\app\app.component.css" />
+    <Content Include="src\app\app.component.html" />
+    <Content Include="src\app\app.component.js" />
+    <Content Include="src\app\app.component.spec.js" />
+    <Content Include="src\app\app.module.js" />
+    <Content Include="src\app\auth\login\login.component.css" />
+    <Content Include="src\app\auth\login\login.component.html" />
+    <Content Include="src\app\auth\login\login.component.js" />
+    <Content Include="src\app\auth\login\login.component.spec.js" />
+    <Content Include="src\app\auth\logout\logout.component.css" />
+    <Content Include="src\app\auth\logout\logout.component.html" />
+    <Content Include="src\app\auth\logout\logout.component.js" />
+    <Content Include="src\app\auth\logout\logout.component.spec.js" />
+    <Content Include="src\app\auth\register-form\register-form.component.css" />
+    <Content Include="src\app\auth\register-form\register-form.component.html" />
+    <Content Include="src\app\auth\register-form\register-form.component.js" />
+    <Content Include="src\app\auth\register-form\register-form.component.spec.js" />
+    <Content Include="src\app\auth\register\register.component.css" />
+    <Content Include="src\app\auth\register\register.component.html" />
+    <Content Include="src\app\auth\register\register.component.js" />
+    <Content Include="src\app\auth\register\register.component.spec.js" />
+    <Content Include="src\app\auth\update-password\update-password.component.css" />
+    <Content Include="src\app\auth\update-password\update-password.component.html" />
+    <Content Include="src\app\auth\update-password\update-password.component.js" />
+    <Content Include="src\app\auth\update-password\update-password.component.spec.js" />
+    <Content Include="src\app\auth\update-personal-info\update-personal-info.component.css" />
+    <Content Include="src\app\auth\update-personal-info\update-personal-info.component.html" />
+    <Content Include="src\app\auth\update-personal-info\update-personal-info.component.js" />
+    <Content Include="src\app\auth\update-personal-info\update-personal-info.component.spec.js" />
+    <Content Include="src\app\header\header.component.css" />
+    <Content Include="src\app\header\header.component.html" />
+    <Content Include="src\app\header\header.component.js" />
+    <Content Include="src\app\header\header.component.spec.js" />
+    <Content Include="src\app\home\home.component.css" />
+    <Content Include="src\app\home\home.component.html" />
+    <Content Include="src\app\home\home.component.js" />
+    <Content Include="src\app\home\home.component.spec.js" />
+    <Content Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.css" />
+    <Content Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.html" />
+    <Content Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.js" />
+    <Content Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.spec.js" />
+    <Content Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.css" />
+    <Content Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.html" />
+    <Content Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.js" />
+    <Content Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.spec.js" />
+    <Content Include="src\app\navbar\navbar.component.css" />
+    <Content Include="src\app\navbar\navbar.component.html" />
+    <Content Include="src\app\navbar\navbar.component.js" />
+    <Content Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.css" />
+    <Content Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.html" />
+    <Content Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.js" />
+    <Content Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.spec.js" />
+    <Content Include="src\app\search-properties\search-properties.component.css" />
+    <Content Include="src\app\search-properties\search-properties.component.html" />
+    <Content Include="src\app\search-properties\search-properties.component.js" />
+    <Content Include="src\app\search-properties\search-properties.component.spec.js" />
+    <Content Include="src\app\search-properties\store\search-properties.actions.js" />
+    <Content Include="src\app\search-properties\store\search-properties.reducers.js" />
+    <Content Include="src\app\services\auth.service.js" />
+    <Content Include="src\app\services\date.service.js" />
+    <Content Include="src\app\services\http.service.js" />
+    <Content Include="src\app\services\loader.service.js" />
+    <Content Include="src\app\services\local-storage.service.js" />
+    <Content Include="src\app\services\nav-menu.service.js" />
+    <Content Include="src\app\services\url.service.js" />
+    <Content Include="src\app\sidebar\sidebar.component.css" />
+    <Content Include="src\app\sidebar\sidebar.component.html" />
+    <Content Include="src\app\sidebar\sidebar.component.js" />
+    <Content Include="src\app\sidebar\sidebar.component.spec.js" />
+    <Content Include="src\app\site-plan-approvals\site-plan-approvals.component.css" />
+    <Content Include="src\app\site-plan-approvals\site-plan-approvals.component.html" />
+    <Content Include="src\app\site-plan-approvals\site-plan-approvals.component.js" />
+    <Content Include="src\app\site-plan-approvals\site-plan-approvals.component.spec.js" />
+    <Content Include="src\app\store\app.reducers.js" />
+    <Content Include="src\assets\header.png" />
+    <Content Include="src\assets\logo.png" />
+    <Content Include="src\environments\environment.hmr.js" />
+    <Content Include="src\environments\environment.js" />
+    <Content Include="src\environments\environment.prod.js" />
+    <Content Include="src\favicon.ico" />
+    <Content Include="src\hmr.js" />
+    <Content Include="src\index.html" />
+    <Content Include="src\karma.conf.js" />
+    <Content Include="src\main.js" />
+    <Content Include="src\polyfills.js" />
+    <Content Include="src\styles.css" />
+    <Content Include="src\test.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="tslint.json" />
+    <Content Include="tsconfig.json" />
+    <Content Include="src\app\agree\agree.component.js.map" />
+    <Content Include="src\app\agree\agree.component.spec.js.map" />
+    <Content Include="src\app\app-material.module.js.map" />
+    <Content Include="src\app\app-routing.module.js.map" />
+    <Content Include="src\app\app.component.js.map" />
+    <Content Include="src\app\app.component.spec.js.map" />
+    <Content Include="src\app\app.module.js.map" />
+    <Content Include="src\app\auth\login\login.component.js.map" />
+    <Content Include="src\app\auth\login\login.component.spec.js.map" />
+    <Content Include="src\app\auth\logout\logout.component.js.map" />
+    <Content Include="src\app\auth\logout\logout.component.spec.js.map" />
+    <Content Include="src\app\auth\register-form\register-form.component.js.map" />
+    <Content Include="src\app\auth\register-form\register-form.component.spec.js.map" />
+    <Content Include="src\app\auth\register\register.component.js.map" />
+    <Content Include="src\app\auth\register\register.component.spec.js.map" />
+    <Content Include="src\app\auth\update-password\update-password.component.js.map" />
+    <Content Include="src\app\auth\update-password\update-password.component.spec.js.map" />
+    <Content Include="src\app\auth\update-personal-info\update-personal-info.component.js.map" />
+    <Content Include="src\app\auth\update-personal-info\update-personal-info.component.spec.js.map" />
+    <Content Include="src\app\header\header.component.js.map" />
+    <Content Include="src\app\header\header.component.spec.js.map" />
+    <Content Include="src\app\home\home.component.js.map" />
+    <Content Include="src\app\home\home.component.spec.js.map" />
+    <Content Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.js.map" />
+    <Content Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.spec.js.map" />
+    <Content Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.js.map" />
+    <Content Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.spec.js.map" />
+    <Content Include="src\app\navbar\navbar.component.js.map" />
+    <Content Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.js.map" />
+    <Content Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.spec.js.map" />
+    <Content Include="src\app\search-properties\search-properties.component.js.map" />
+    <Content Include="src\app\search-properties\search-properties.component.spec.js.map" />
+    <Content Include="src\app\search-properties\store\search-properties.actions.js.map" />
+    <Content Include="src\app\search-properties\store\search-properties.reducers.js.map" />
+    <Content Include="src\app\services\auth.service.js.map" />
+    <Content Include="src\app\services\date.service.js.map" />
+    <Content Include="src\app\services\http.service.js.map" />
+    <Content Include="src\app\services\loader.service.js.map" />
+    <Content Include="src\app\services\local-storage.service.js.map" />
+    <Content Include="src\app\services\nav-menu.service.js.map" />
+    <Content Include="src\app\services\url.service.js.map" />
+    <Content Include="src\app\sidebar\sidebar.component.js.map" />
+    <Content Include="src\app\sidebar\sidebar.component.spec.js.map" />
+    <Content Include="src\app\site-plan-approvals\site-plan-approvals.component.js.map" />
+    <Content Include="src\app\site-plan-approvals\site-plan-approvals.component.spec.js.map" />
+    <Content Include="src\app\store\app.reducers.js.map" />
+    <Content Include="src\assets\.gitkeep" />
+    <Content Include="src\browserslist" />
+    <Content Include="src\environments\environment.hmr.js.map" />
+    <Content Include="src\environments\environment.js.map" />
+    <Content Include="src\environments\environment.prod.js.map" />
+    <Content Include="src\hmr.js.map" />
+    <Content Include="src\main.js.map" />
+    <Content Include="src\polyfills.js.map" />
+    <Content Include="src\test.js.map" />
+    <Content Include="src\tsconfig.app.json" />
+    <Content Include="src\tsconfig.spec.json" />
+    <Content Include="src\tslint.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="file1.ts" />
+    <TypeScriptCompile Include="src\app\agree\agree.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\agree\agree.component.ts" />
+    <TypeScriptCompile Include="src\app\app-material.module.ts" />
+    <TypeScriptCompile Include="src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\app.component.ts" />
+    <TypeScriptCompile Include="src\app\app.module.ts" />
+    <TypeScriptCompile Include="src\app\auth\login\login.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\auth\login\login.component.ts" />
+    <TypeScriptCompile Include="src\app\auth\logout\logout.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\auth\logout\logout.component.ts" />
+    <TypeScriptCompile Include="src\app\auth\register-form\register-form.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\auth\register-form\register-form.component.ts" />
+    <TypeScriptCompile Include="src\app\auth\register\register.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\auth\register\register.component.ts" />
+    <TypeScriptCompile Include="src\app\auth\update-password\update-password.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\auth\update-password\update-password.component.ts" />
+    <TypeScriptCompile Include="src\app\auth\update-personal-info\update-personal-info.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\auth\update-personal-info\update-personal-info.component.ts" />
+    <TypeScriptCompile Include="src\app\header\header.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\header\header.component.ts" />
+    <TypeScriptCompile Include="src\app\home\home.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\home\home.component.ts" />
+    <TypeScriptCompile Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\my-licence\apply-for-licence\apply-for-licence.component.ts" />
+    <TypeScriptCompile Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\my-permit\apply-for-permit\apply-for-permit.component.ts" />
+    <TypeScriptCompile Include="src\app\navbar\navbar.component.ts" />
+    <TypeScriptCompile Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\search-mobile-sign-location\search-mobile-sign-location.component.ts" />
+    <TypeScriptCompile Include="src\app\search-properties\search-properties.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\search-properties\search-properties.component.ts" />
+    <TypeScriptCompile Include="src\app\search-properties\store\search-properties.actions.ts" />
+    <TypeScriptCompile Include="src\app\search-properties\store\search-properties.reducers.ts" />
+    <TypeScriptCompile Include="src\app\services\auth.service.ts" />
+    <TypeScriptCompile Include="src\app\services\date.service.ts" />
+    <TypeScriptCompile Include="src\app\services\http.service.ts" />
+    <TypeScriptCompile Include="src\app\services\loader.service.ts" />
+    <TypeScriptCompile Include="src\app\services\local-storage.service.ts" />
+    <TypeScriptCompile Include="src\app\services\nav-menu.service.ts" />
+    <TypeScriptCompile Include="src\app\services\url.service.ts" />
+    <TypeScriptCompile Include="src\app\sidebar\sidebar.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\sidebar\sidebar.component.ts" />
+    <TypeScriptCompile Include="src\app\site-plan-approvals\site-plan-approvals.component.spec.ts" />
+    <TypeScriptCompile Include="src\app\site-plan-approvals\site-plan-approvals.component.ts" />
+    <TypeScriptCompile Include="src\app\store\app.reducers.ts" />
+    <TypeScriptCompile Include="src\environments\environment.hmr.ts" />
+    <TypeScriptCompile Include="src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="src\environments\environment.ts" />
+    <TypeScriptCompile Include="src\hmr.ts" />
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\polyfills.ts" />
+    <TypeScriptCompile Include="src\test.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>39588</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19441/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

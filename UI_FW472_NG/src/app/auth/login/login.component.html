@@ -1,0 +1,59 @@
+
+  <div>
+    <div class="card" >
+      <h5 class="card-header"> Login</h5>
+      <div class="card-body">
+        <div class="alert alert-danger" role="alert" *ngIf="errorShow == true">
+          <p>
+            Wrong Username or Password 
+          </p>    
+        </div>  
+        <form [formGroup] = "loginForm">
+          <div class="row mt-2">
+            <div class="col-12 col-md-4 "> 
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Username" formControlName = 'username' type="text">
+              </mat-form-field>
+            </div>
+          </div >
+            <div class="row">
+            <div class="col-12 col-md-4">
+              <mat-form-field class="full-width">
+                <input matInput placeholder="Password" formControlName = 'password' type="password">
+              </mat-form-field>
+            </div>
+          </div>
+            <div class="row">
+            <div class="col-12 col-md-4">
+
+              <div class="float-left">
+                <div class="button-panel">
+                    <button class="btn btn-primary btn-sm float-left ripple" (click)="authenticatePublicUser()">
+                      Forgot Password
+                    </button>
+                </div>
+              </div>
+              <div class="float-right">
+                <div class="button-panel">
+                    <button class="btn btn-primary btn-sm float-right ripple" (click)="authenticatePublicUser()">
+                      Login
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>  
+    <div class="card" >
+      <h5 class="card-header"> Register Now</h5>
+      <div class="card-body">
+        <p>
+            If you do not have a user account:
+        </p>
+        <button class="btn btn-primary btn-sm ripple" (click)='register()'>
+          Register
+        </button>  
+      </div>
+    </div>
+  </div>

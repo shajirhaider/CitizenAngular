@@ -1,0 +1,14 @@
+/UI_FW472/obj
+/UI_FW472/App_Data
+/UI_FW472/bin
+/UI_FW472/UI_FW472.csproj.user
+/.vs/AmandaPortal_2017/v15/.suo
+/.vs/AmandaPortal_2017/v15/Server/sqlite3/db.lock
+/.vs/AmandaPortal_2017/v15/Server/sqlite3/storage.ide
+/.vs/AmandaPortal_2017/v15/Server/sqlite3/storage.ide-shm
+/.vs/AmandaPortal_2017/v15/Server/sqlite3/storage.ide-wal
+/.vs/config/applicationhost.config
+/UI_FW472_NG/dist
+/UI_FW472_NG/obj
+/UI_FW472_NG/bin
+/UI_FW472_NG/node_modules

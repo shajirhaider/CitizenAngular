@@ -1,0 +1,25 @@
+<div class="vertical-menu">
+  <div *ngIf='showLoader == false'>
+    <a [routerLink]="['/home']" routerLinkActive="active">Home</a>
+    <a [routerLink]="['/search-properties']" routerLinkActive="active">Search</a>
+    <a [routerLink]="['/search-mobile-sign-location']" routerLinkActive="active">Search Mobile Sign Locations</a>
+    <a href="test.aspx">test</a>
+    <a href="#" routerLinkActive="active">Public Payment Page</a>
+    <a [routerLink]="['/login']" routerLinkActive="active">Login/Register</a>
+    <a href="#" routerLinkActive="active">Help</a>
+
+  </div>
+  <div *ngIf='showLoader ==true'>
+
+    <div *ngFor = "let i of items" > 
+        <div>
+          <a *ngIf = "i.url" [routerLink] ="[i.url]"  routerLinkActive="active">{{i.text}}</a>
+          <a *ngIf = "i.child" (click)="i.hasChild = !i.hasChild" >{{i.text}}</a>
+        </div>
+      <span *ngIf='i.child && i.hasChild == true' >       
+        <a *ngFor = "let j of i.child" [routerLink] ="[j.url]" class="child-menu" routerLinkActive="active">{{j.text}}</a>
+      </span>
+    </div>
+
+  </div>
+  </div>

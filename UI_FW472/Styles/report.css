@@ -1,0 +1,73 @@
+﻿div.popuppage div.pagetopheader
+{
+    margin: 0px 0px 0px 0px;
+    font-size: 1.2em;
+    font-weight :normal;
+    color: #eeeeee !important;
+    background-color: #0078AE;
+    border: 1px solid #dddddd;
+    padding: 5px 0px 2px 6px;
+    font-variant: small-caps;
+}
+div.popuptitlebarwrapper
+{
+    padding: 0px 0px 5px 0px;
+}
+
+table.tabletitlebar
+{
+	width:100%;
+}
+
+table.tabletitlebar, 
+table.tabletitlebar td
+{
+	border-spacing:0px;
+	border-collapse:collapse ;  
+    background-color: #0078AE;/*#0080C3;0A85C1, 0D75A4*/
+}
+
+td.tdpopuptitletext
+{
+    color:#FFFFFF;
+    float:left; 
+    text-align:left; 
+    vertical-align:middle; 
+    padding-left:5px;
+}
+
+td.tdclosebutton
+{
+	width:10px;
+	padding-right:5px; 
+}
+div.divclosebutton {
+    width: 15px;
+    height: 15px;
+    background: #333333 url('../images/x.png') no-repeat center 50%;/*f04900*/
+    background-size: 100% 100%;
+    border: 1px solid white;
+    _border-radius: 50%;
+    behavior: url(PIE/pie.htc);
+    float:right; 
+    margin-top:3px; 
+}
+
+
+div.divclosebutton:hover {
+    background-color: #ff0000;/*e34c47*/
+    cursor: pointer;
+}
+
+div.clicktoseedetails
+{
+	font-size: 0.8em;
+	font-style:italic ;  
+}
+
+
+.reporterror
+{
+    color :red;
+    margin:5px 0px 5px 0px;
+}

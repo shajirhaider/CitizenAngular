@@ -1,0 +1,117 @@
+
+<div class="">
+    <div class="card mb-2" >
+      <h5 class="card-header">Property Address</h5>
+      <div class="card-body">
+        {{address}}
+      </div>
+    </div>
+    <div class="card" >
+        <div class="card-header">
+          <div class="row">
+            <div class="col-md-7 col-12">
+              <span style="font-size:20px; vertical-align:middle"> Permits / Site Plan Approvals</span>         
+
+            </div>
+            <div class="col-md-5 col-12">
+                <input class="form-control float-right" (keyup)="applyFilter($event.target.value)" placeholder="Search">     
+            </div>
+          </div>
+  
+       </div>
+        <div class="card-body"> 
+        <div class="mat-elevation-z1">    
+          <mat-table #table [dataSource]="dataSource" class="result-table" matSort>
+            <ng-container matColumnDef="folderRSN" >
+              <mat-header-cell *matHeaderCellDef mat-sort-header class="col-md-1"> RSN </mat-header-cell>
+              <mat-cell *matCellDef="let element" class="col-md-1 col-12"> 
+                <span class="mobile-label"><i class="fas fa-star-half-alt"></i></span>
+                {{element.folderRSN}} 
+              </mat-cell>
+            </ng-container>  
+            <ng-container matColumnDef="folderNumber">
+              <mat-header-cell *matHeaderCellDef mat-sort-header class="col-md-2"> Folder# </mat-header-cell>
+              <mat-cell *matCellDef="let element" class="col-md-2 col-12"> 
+                <span class="mobile-label"><i class="fas fa-folder"></i></span>
+                {{element.folderNumber}} 
+              </mat-cell>
+            </ng-container>  
+            <ng-container matColumnDef="folderTypeDesc">
+              <mat-header-cell *matHeaderCellDef mat-sort-header  class="col-md-3" > 
+              <span class="header-name-type"> Type </span> /
+              <span class="header-name-sub"> Sub </span> /
+              <span class="header-name-work"> Work </span>
+              </mat-header-cell>
+              <mat-cell *matCellDef="let row"  class="col-md-3 col-12"> 
+                <span class="mobile-label"><i class="fas fa-network-wired"></i></span> 
+
+                <!-- {{row.folderTypeDesc}} <br>
+                {{row.subCodeDesc}} <br>
+                {{row.workCodeDesc}} -->
+                <span  class="type-sub-work-Bg">
+                <p class="row-name-type">
+                    {{row.folderTypeDesc}}
+                </p>
+                <p class="row-name-sub">
+                  {{row.subCodeDesc}}
+                </p>
+                <p class="row-name-work">
+                  {{row.workCodeDesc}}
+                </p>
+              </span>
+              </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="statusDesc" >
+              <mat-header-cell *matHeaderCellDef mat-sort-header class="col-md-1"> Status </mat-header-cell>
+              <mat-cell *matCellDef="let element" class="col-md-1 col-12" > 
+                <span class="mobile-label"> <i class="fas fa-check-square"></i></span>
+                {{element.statusDesc}} 
+              </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="indate" >
+              <mat-header-cell *matHeaderCellDef mat-sort-header  class="width-14"> Date Application Received </mat-header-cell>
+              <mat-cell *matCellDef="let element"  class="width-14 " > 
+                <span class="mobile-label"><i class="fas fa-calendar-plus"></i></span>
+                {{element.indate}} 
+              </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="issueDate" >
+              <mat-header-cell *matHeaderCellDef mat-sort-header  class="width-14"> Date Application Issued /Approved </mat-header-cell>
+              <mat-cell *matCellDef="let element"  class="width-14" > 
+                <span class="mobile-label"><i class="fas fa-calendar-check"></i></span>
+                {{element.issueDate}} 
+              </mat-cell>
+            </ng-container>
+            <ng-container matColumnDef="finalDate" >
+              <mat-header-cell *matHeaderCellDef mat-sort-header  class="width-14"> Date File Closed </mat-header-cell>
+              <mat-cell *matCellDef="let element"  class="width-14" > 
+                <span class="mobile-label"><i class="fas fa-calendar-week"></i></span>
+                {{element.finalDate}} 
+              </mat-cell>
+            </ng-container>
+        
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+          <mat-paginator [pageSizeOptions]="[10, 15, 20, 50]"></mat-paginator>
+        </div>
+        </div>
+      </div>
+    <div class="mt-3">
+      <div class="button-panel">
+          <button class="btn btn-primary ripple btn-sm float-left">
+            <a routerLink="/search-properties" >  
+              <span class="button-mobile-label"><i class="fas fa-arrow-left"></i></span>
+              <span class="button-label">  Back To Search Result </span> 
+            </a>
+          </button>
+          <button class="btn btn-primary ripple btn-sm float-right" (click) = 'localStorageDataChange()'>
+            <span class="button-mobile-label"><i class="fas fa-search"></i></span>
+            <span class="button-label"> New Search</span> 
+            </button>
+      </div>
+      </div>
+  
+</div>
+    
+    

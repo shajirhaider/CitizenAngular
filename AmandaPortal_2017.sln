@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_FW472", "UI_FW472\UI_FW472.csproj", "{0BF57E3E-3AE3-4F3B-B334-32DD57B4D7FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_FW472_NG", "UI_FW472_NG\UI_FW472_NG.csproj", "{57931A6B-E893-4418-B6E5-BCE388D7B8BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BF57E3E-3AE3-4F3B-B334-32DD57B4D7FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BF57E3E-3AE3-4F3B-B334-32DD57B4D7FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BF57E3E-3AE3-4F3B-B334-32DD57B4D7FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BF57E3E-3AE3-4F3B-B334-32DD57B4D7FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57931A6B-E893-4418-B6E5-BCE388D7B8BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57931A6B-E893-4418-B6E5-BCE388D7B8BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57931A6B-E893-4418-B6E5-BCE388D7B8BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57931A6B-E893-4418-B6E5-BCE388D7B8BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21B662DD-FB30-49D1-8F9F-6D093D14E528}
+	EndGlobalSection
+EndGlobal

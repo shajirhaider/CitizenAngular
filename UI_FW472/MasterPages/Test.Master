@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Test.Master.cs" Inherits="RA.AMANDA.Portal.UIFW.MasterPages.Test" %>
+
+<%@ Register Src="~/Controls/Test/UCTopMenu.ascx" TagName="TopMenu"  TagPrefix="uc1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.2)" />
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.2)" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <title></title>
+    <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.colorbox.js"></script>
+    <script type="text/javascript" src="../Scripts/Angular/1.5.0/angular.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Angular/angular-route.js"></script>
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-animate.js?t=1"></script>
+    <script type="text/javascript" src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.0.js?t=1"></script>
+
+    <script type="text/javascript" src="../Scripts/showdetails.js?v=3"></script>
+    <script type="text/javascript" src="../Scripts/Angular/amanda.js?v=3"></script>
+
+    <script type="text/javascript" src="../Scripts/json2.js"></script>
+    <script type="text/javascript" src="../Scripts/pmrpc.js"></script>
+
+    <link type="text/css" href="~/Styles/style.css?v=1" rel="stylesheet" />
+    <link type="text/css" href="~/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <link type="text/css" href="~/styles/admin.css?v=1" rel="stylesheet" />
+    <link type="text/css" href="~/styles/table.css?v=1" rel="stylesheet" />
+    <link type="text/css" href="~/styles/tab.css?v=1" rel="stylesheet" />
+    <link type="text/css" href="~/Styles/colorboxjs/colorbox.css?v=1" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body ng-app="amanda.app">
+    <form id="form1" runat="server">
+        <div class="page">
+            <div>
+                <uc1:TopMenu ID="TopMenu1" runat="server" />
+
+            </div>
+            <div class="pageheader">
+                <table class ="table-pageheader">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="PageHeaderContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td class="td-headermenu">
+
+
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="div-body">
+
+                <div class="content">
+                    <div id="divPermitted" runat ="server" visible ="true" >
+                        <asp:ContentPlaceHolder ID="body" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <asp:Literal ID="literalToken" runat="server"></asp:Literal>
+    </form>
+</body>
+</html>
